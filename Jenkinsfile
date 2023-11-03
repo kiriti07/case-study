@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build and Publish') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 // Your build commands go here
