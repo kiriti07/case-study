@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/hshar/website.git'
+                sh 'git clone https://github.com/hshar/website.git'
             }
         }
         stage('Build and Publish') {
